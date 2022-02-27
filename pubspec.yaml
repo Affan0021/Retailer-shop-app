@@ -72,6 +72,19 @@ flutter:
     - images/detol.png
     - images/masala.png
     - images/shampoo.png
+    - images/backs.jpg
+    - images/oil.jpg
+    - images/bottle.jpg
+    - images/dry.jpg
+    - images/match.jpg
+    - images/nimko.jpg
+    - images/noodle.jpg
+    - images/perf.jpg
+    - images/cream.jpg
+    - images/bred.jpg
+    - images/ketch.png
+    - images/milk.jpg
+    - images/sugar.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

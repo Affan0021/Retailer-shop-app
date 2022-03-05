@@ -88,8 +88,8 @@ class _HomePageState extends State<HomePage> {
                     child: Text('نمایاں اشیا',style: TextStyle(fontSize: 20.sp,fontWeight: FontWeight.bold),),
                   ),
                   Container(
-                      height: 200,
-                      width: 500,
+                      height: 200.h,
+                      width: 500.w,
 
                       child: ListView(
                         scrollDirection: Axis.horizontal,
@@ -98,13 +98,13 @@ class _HomePageState extends State<HomePage> {
                           Row(
                             children: [
 
-                              buildcard('کافی','مقدار: 6 اشیا','Rs 106','images/coffee.png'),
+                              buildcard('کافی','Rs 120.4','Rs 106','images/coffee.png'),
                               SizedBox(width: 15.w,),
-                              buildcard('بسکٹ','مقدار: 4 اشیا','Rs 150','images/biscuits.png'),
+                              buildcard('بسکٹ','Rs 160.57','Rs 150','images/biscuits.png'),
                               SizedBox(width: 15.w,),
-                              buildcard('ڈیٹول','مقدار: 3 اشیا','Rs 200','images/detol.png'),
+                              buildcard('ڈیٹول','Rs 240.04','Rs 200','images/detol.png'),
                               SizedBox(width: 15.w,),
-                              buildcard('مسالہ','مقدار: 4 اشیا','Rs 500','images/masala.png'),
+                              buildcard('مسالہ','Rs 560','Rs 500','images/masala.png'),
 
                             ],
                           )
@@ -268,11 +268,13 @@ class _HomePageState extends State<HomePage> {
   Widget buildcard(String title , String price , String quantity , String image) =>  Container(
 
     width: 180.w,
-    height: 220.h,
+    height: 260.h,
 
     child: Column(
 
       children: [
+       Row(
+         children: [
 
         Container(
           width: 120.w,
@@ -281,9 +283,56 @@ class _HomePageState extends State<HomePage> {
           child: Image.asset(image,),
 
         ),
-        SizedBox(
-          height: 10.h,
+        Column(
+          children: [
+
+        Container(
+          width: 30.w,
+          height: 30.h,
+          alignment: Alignment.center,
+          child:RotatedBox(
+              quarterTurns: 3,
+              child: Text('1L',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'OpenSans',
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              textAlign: TextAlign.center,
+              )//your text
+          ),
+          decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(7.r),
+          ),
         ),
+            SizedBox(height: 2.h,),
+            Container(
+              width: 30.w,
+              height: 30.h,
+              alignment: Alignment.center,
+              child:RotatedBox(
+                  quarterTurns: 3,
+                  child: Text('x5',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'OpenSans',
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  )//your text
+              ),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(7.r),
+              ),
+            ),
+          ],
+        )
+         ],
+       ),
         Container(
 
             margin: EdgeInsets.only(right: 20.w),
@@ -306,7 +355,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.black,
                 fontFamily: 'OpenSans',
                 fontSize: 15.sp,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.bold,
               ),)
         ),
 
@@ -317,8 +366,8 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(
                 color: Colors.black,
                 fontFamily: 'OpenSans',
-                fontSize: 15.sp,
-                fontWeight: FontWeight.w400,
+                fontSize: 12.sp,
+                fontWeight: FontWeight.w800,
               ),)
         ),
         Container(
@@ -350,7 +399,7 @@ class _HomePageState extends State<HomePage> {
 
 
               child: Text(
-                'خریداری',
+                'ابھی خریدیں',
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'OpenSans',

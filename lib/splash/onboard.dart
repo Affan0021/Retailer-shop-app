@@ -15,14 +15,13 @@ class SecondSplash extends StatefulWidget {
 class _SecondSplashState extends State<SecondSplash> {
 
   var FruitList = [
-    'We are providing the best drinks in our Town the companies originality makes it different from other \nshops',
-    'We are providing the best Biscuits in our Town the egg and oil choice makes it different from other \nshops.',
-    'We are providing the best Tea in our Town the companies orginality makes it different from other \nshops.',
-    'We are providing the best Coffee in our Town the companies orginality makes it different from other \nshops.',
-    'We are providing the best detol in our Town the companies orginality makes it different from other \nshops.',
-    'We are providing the best masala in our Town the companies orginality makes it different from other \nshops.',
-    'We are providing the best shampoo in our Town the companies orginality makes it different from other \nshops.',
-
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
+    'ہم اپنے ٹاؤن میں بہترین مشروبات فراہم کر رہے ہیں جو کمپنیوں کی اصلیت اسے دیگر دکانوں سے مختلف بناتی ہے',
   ];
 
   @override
@@ -55,8 +54,8 @@ class _SecondSplashState extends State<SecondSplash> {
                       viewportFraction: 1,
                       onPageChanged: (index , reason)  =>
                           setState(() => activeindex = index),
-                       autoPlay: true,
-                        autoPlayAnimationDuration: Duration(seconds: 2),
+                       // autoPlay: true,
+                       //  autoPlayAnimationDuration: Duration(seconds: 2),
 
                     ),
 
@@ -208,7 +207,7 @@ class _SecondSplashState extends State<SecondSplash> {
 
                       ),
                       child: Text(
-                        '\tGet Started ',
+                        '\tشروع کرنے ',
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'OpenSans',

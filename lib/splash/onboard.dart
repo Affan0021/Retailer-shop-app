@@ -54,8 +54,8 @@ class _SecondSplashState extends State<SecondSplash> {
                       viewportFraction: 1,
                       onPageChanged: (index , reason)  =>
                           setState(() => activeindex = index),
-                       // autoPlay: true,
-                       //  autoPlayAnimationDuration: Duration(seconds: 2),
+                       autoPlay: true,
+                        autoPlayAnimationDuration: Duration(seconds: 2),
 
                     ),
 

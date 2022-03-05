@@ -117,7 +117,7 @@ class _SignupState extends State<Signup> {
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(left: 15.w),
+                            contentPadding: EdgeInsets.only(left: 15.w,bottom: 15.h),
 
                             hintText: '+92     \tاپنا فون نمبر درج کریں',
                             hintStyle: TextStyle(
@@ -154,9 +154,9 @@ class _SignupState extends State<Signup> {
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(left: 15.w),
+                            contentPadding: EdgeInsets.only(left: 15.w,bottom: 15.h),
 
-                            hintText: 'اپنا پورا نام درج کریں',
+                            hintText: 'اپنی دکان کا نام درج کریں',
                             hintStyle: TextStyle(
                               color: Colors.white, // <-- Change this
                               fontSize: 15.sp,
@@ -191,9 +191,9 @@ class _SignupState extends State<Signup> {
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(left: 15.w),
+                            contentPadding: EdgeInsets.only(left: 15.w,bottom: 15.h),
 
-                            hintText: 'اپنے اسٹور کا نام درج کریں',
+                            hintText: 'اپنا مقام منتخب کریں',
                             hintStyle: TextStyle(
                               color: Colors.white, // <-- Change this
                               fontSize: 15.sp,
@@ -228,9 +228,9 @@ class _SignupState extends State<Signup> {
                           ),
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            contentPadding: EdgeInsets.only(left: 15.w),
+                            contentPadding: EdgeInsets.only(left: 15.w,bottom: 15.h),
 
-                            hintText: 'کیا آپ اسٹور پر ہیں؟',
+                            hintText: 'اپنی نام درج کریں',
                             hintStyle: TextStyle(
                               color: Colors.white, // <-- Change this
                               fontSize: 15.sp,
@@ -251,113 +251,6 @@ class _SignupState extends State<Signup> {
                       ),
 
 
-
-                      SizedBox(
-                        height: 15.h,
-                      ),
-
-                      Row(
-                        children: [
-                          SizedBox(width: 70.w,),
-                          Container(
-                              height: 40.h,
-                              width: 80.w,
-                              child: ElevatedButton(
-                                onPressed: ()
-
-                                {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(builder: (context) => Login()),
-                                  // );
-
-                                },
-
-
-                                style: ButtonStyle(
-
-                                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                                        (Set<MaterialState> states) {
-                                      if (states.contains(MaterialState.pressed))
-                                        return Colors.white;
-                                      return Colors.purple;
-                                    },
-                                  ),
-                                  shape:
-                                  MaterialStateProperty.all<RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20.0),
-                                          side: BorderSide(
-                                              color: Colors.white)
-                                      )
-                                  ),
-
-                                ),
-
-
-                                child: Text(
-                                  '\tنہیں',
-                                  style: TextStyle(
-                                    color: Colors.blueAccent,
-                                    fontFamily: 'OpenSans',
-                                    fontSize: 22.sp,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              )
-                          ),
-                          SizedBox(width: 50.w,),
-
-                          Container(
-                              height: 40.h,
-                              width: 80.w,
-                              child: ElevatedButton(
-                                onPressed: ()
-
-                                {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(builder: (context) => Login()),
-                                  // );
-
-                                },
-
-
-                                style: ButtonStyle(
-
-                                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                                        (Set<MaterialState> states) {
-                                      if (states.contains(MaterialState.pressed))
-                                        return Colors.white;
-                                      return Colors.purple;
-                                    },
-                                  ),
-                                  shape:
-                                  MaterialStateProperty.all<RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(20.0),
-                                          side: BorderSide(
-                                              color: Colors.white)
-                                      )
-                                  ),
-
-                                ),
-
-
-                                child: Text(
-                                  '\tہاں',
-                                  style: TextStyle(
-                                    color: Colors.blueAccent,
-                                    fontFamily: 'OpenSans',
-                                    fontSize: 22.sp,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              )
-                          ),
-
-                        ],
-                      ),
 
                       SizedBox(
                         height: 30.h,

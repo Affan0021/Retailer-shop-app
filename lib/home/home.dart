@@ -2,10 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:retailer/Register/signin.dart';
-import 'package:retailer/home/profile.dart';
 
-import 'about us.dart';
-import 'cart.dart';
 import 'homepage.dart';
 
 
@@ -23,9 +20,9 @@ class _HomeState extends State<Home> {
   final tabs = [
 
     HomePage(),
-    About(),
-    Cart(),
-    Profile(),
+    Signin(),
+    Text('home3'),
+    Text('home4'),
 
 
   ];

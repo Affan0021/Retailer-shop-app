@@ -42,12 +42,12 @@ class _RegisterState extends State<Register> {
                       Container(
                         alignment: Alignment.center,
                          child: Text(
-                          'یادگار بازار میں خوش آمدید',
+                          'دکان میں خوش آمدید',
                           style: TextStyle(
 
-                            color: Colors.black87,
+                            color: Colors.white,
                             fontFamily: 'OpenSans',
-                            fontSize: 27.sp,
+                            fontSize: 30.sp,
                             fontWeight: FontWeight.bold,
 
 
@@ -70,12 +70,12 @@ class _RegisterState extends State<Register> {
 
                         color: Colors.transparent,
                         child: const Text(
-                         'اب ہم آپ کو قیمتوں کے ساتھ اپ ڈیٹ',
+                         'خوردہ فروش کی سب سے بڑی دکان میں خوش آمدید',
                           style: TextStyle(
 
                             color: Colors.black87,
                             fontFamily: 'OpenSans',
-                            fontSize: 20.0,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.bold,
 
 
@@ -145,9 +145,9 @@ class _RegisterState extends State<Register> {
 
 
                             child: Text(
-                              'لاگ ان',
+                              'سائن ان',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.blueAccent,
                                 fontFamily: 'OpenSans',
                                 fontSize: 25.sp,
                                 fontWeight: FontWeight.bold,
@@ -200,9 +200,9 @@ class _RegisterState extends State<Register> {
                             ),
 
                             child: Text(
-                            'اپلای کریں',
+                              '\tسائن اپ',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.blueAccent,
                                 fontFamily: 'OpenSans',
                                 fontSize: 25.sp,
                                 fontWeight: FontWeight.bold,
